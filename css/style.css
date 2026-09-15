@@ -1,5 +1,5 @@
 :root {
-  --bg: #efeff0;        /* newsprint paper gray/
+  --bg: #efeff1;        /* newsprint paper gray/
   --bg-soft: #e2e3e4;   /* slightly deeper gray for contrasting sections */
   --ink: #14140f;
   --muted: #8b8c8d;
@@ -59,7 +59,7 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(239, 239, 240, 0.85);
+  background: rgba(239, 239, 242, 0.85);
   backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -110,7 +110,7 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
 .scroll-cue::after { content: ""; width: 1px; height: 34px; background: var(--muted); }
 @keyframes bob { 0%,100%{ transform: translateX(-50%) translateY(0);} 50%{ transform: translateX(-50%) translateY(6px);} }
 
-/* ---------- Intro block (below the Hi) ---------- */
+/* ---------- Intro block ---------- */
 .intro { padding: 0px 0 100px; text-align: left; }
 /* Only the name + role stay centered; everything below reads left-aligned */
 .intro h1,
@@ -128,7 +128,7 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
 .prev-list li { color: var(--muted-dark); font-size: 1.02rem; line-height: 1.7; }
 .intro .btn { display: flex; width: fit-content; margin: 48px auto 0; }
 
-/* ---------- Portrait parallax (photo drifts slower than the page) ---------- */
+/* ---------- Portrait parallax ---------- */
 .portrait-reveal {
   position: relative;
   height: 91vh;
@@ -147,7 +147,7 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
   .portrait-reveal { height: 56vh; min-height: 340px; background-attachment: scroll; }
 }
 
-/* ---------- Projects preview (three areas) ---------- */
+/* ---------- Projects preview ---------- */
 .projects-preview {
   padding: 80px 0;
   background: var(--bg);
@@ -167,7 +167,7 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
   width: 150px; height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
   margin-bottom: 28px;
 }
 .area-title {
@@ -222,7 +222,7 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
    reveal colour + zoom on hovering the picture or the headline. Touch devices
    have no hover, so they just show the images in full colour. */
 @media (hover: hover) {
-  .project-thumb img { filter: grayscale(100%); }
+  .project-thumb img { /*filter: grayscale(100%); */}
   .project-thumb:hover img,
   .projects-item:has(h3 a:hover) .project-thumb img { filter: grayscale(0%); transform: scale(1.04); }
 }
