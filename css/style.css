@@ -266,7 +266,7 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
 
 @media (max-width: 640px) {
   .photo-grid { columns: 2 140px; }
-  .gfx-grid { columns: 1; }
+  .gfx-grid { columns: 2; }
 }
 
 /* ---------- Section shell ---------- */
