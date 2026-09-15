@@ -236,6 +236,42 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
   .projects-item { grid-template-columns: 1fr; gap: 20px; padding: 32px 0; }
 }
 
+/* ---------- Multimedia page ---------- */
+.media-section { padding: 60px 0; }
+.media-section + .media-section { border-top: 1px solid var(--line); }
+.media-heading { font-family: var(--display); font-size: clamp(1.7rem, 3.5vw, 2.4rem); letter-spacing: 0.02em; margin-bottom: 8px; }
+.media-sub { font-family: var(--sans); color: var(--muted-dark); font-size: 1rem; margin-bottom: 32px; max-width: 640px; }
+
+/* Photography — masonry columns */
+.photo-grid { columns: 3 260px; column-gap: 16px; }
+.photo-grid > * { width: 100%; margin: 0 0 16px; border-radius: 3px; break-inside: avoid; display: block; overflow: hidden; }
+.photo-grid img { width: 100%; display: block; transition: transform .5s ease; }
+.photo-grid a:hover img { transform: scale(1.04); }
+.ph-tile { background: linear-gradient(135deg, #e6e7e8, #d4d5d6); }
+.ph-tile.t1 { aspect-ratio: 3 / 4; }
+.ph-tile.t2 { aspect-ratio: 1 / 1; }
+.ph-tile.t3 { aspect-ratio: 4 / 3; }
+.ph-tile.t4 { aspect-ratio: 4 / 5; }
+
+/* Graphics — grid */
+.gfx-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.gfx-grid > * { overflow: hidden; border-radius: 3px; }
+.gfx-grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; transition: transform .5s ease; }
+.gfx-grid a:hover img { transform: scale(1.04); }
+.gfx-ph { aspect-ratio: 4 / 5; background: linear-gradient(135deg, #e6e7e8, #d4d5d6); }
+
+/* Podcast */
+.podcast-embed { max-width: 720px; }
+.podcast-embed iframe { width: 100%; border: 0; border-radius: 12px; display: block; }
+.podcast-placeholder {
+  max-width: 720px; padding: 40px; border: 1px dashed var(--line); border-radius: 12px;
+  font-family: var(--sans); color: var(--muted); font-size: 0.95rem; text-align: center;
+}
+
+@media (max-width: 640px) {
+  .photo-grid { columns: 2 140px; }
+}
+
 /* ---------- Section shell ---------- */
 .section { padding: 90px 0; }
 

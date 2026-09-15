@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Garden — Levi Jiang</title>
-  <meta name="description" content="Levi Jiang's garden — ideas, proposals, works-in-progress, and interesting datasets." />
+  <title>Multimedia — Levi Jiang</title>
+  <meta name="description" content="Photography, graphics, and audio work by Levi Jiang." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -21,8 +21,8 @@
           <li><a href="index.html">About</a></li>
           <li><a href="data-journalism.html">Data Journalism</a></li>
           <li><a href="design-development.html">Design &amp; Development</a></li>
-          <li><a href="multimedia.html">Multimedia</a></li>
-          <li><a href="garden.html" class="active">Garden</a></li>
+          <li><a href="multimedia.html" class="active">Multimedia</a></li>
+          <li><a href="garden.html">Garden</a></li>
         </ul>
       </nav>
     </div>
@@ -30,39 +30,55 @@
 
   <main>
     <div class="page-head">
-      <div class="container">
-        <h1 class="display">Garden</h1>
-        <p class="page-sub">NOT real gardening!</p>
-        <p class="lead">This is where I store my ideas, proposals, works-in-progress, and datasets I find interesting. Feel free to use these data or make suggestions!</p>
-      </div>
+      <h1 class="display">Multimedia</h1>
+      <p class="lead">Beyond data and code — a look at my photography, graphics, and audio.</p>
     </div>
 
-    <section class="section" style="padding-top: 40px;">
+    <!-- ============ Photography ============ -->
+    <section class="media-section">
       <div class="container">
-        <div class="project-list">
+        <h2 class="media-heading">Photography</h2>
+        <p class="media-sub">A selection of frames from my travels and reporting.</p>
+        <!-- Replace each <div class="ph-tile ..."></div> with your photo:
+             <a href="assets/Pics/photo-1.jpg" target="_blank"><img src="assets/Pics/photo-1.jpg" alt="caption"></a> -->
+        <div class="photo-grid">
+          <div class="ph-tile t1"></div>
+          <div class="ph-tile t2"></div>
+          <div class="ph-tile t3"></div>
+          <div class="ph-tile t4"></div>
+          <div class="ph-tile t2"></div>
+          <div class="ph-tile t1"></div>
+          <div class="ph-tile t3"></div>
+          <div class="ph-tile t4"></div>
+        </div>
+      </div>
+    </section>
 
-          <article class="projects-item">
-            <a class="project-thumb" href="https://djnf-data-2025.github.io/levi-jiang/" target="_blank" rel="noopener">
-              <img src="assets/Pics/garden-nj.jpg" alt="New Jersey governor candidates" />
-            </a>
-            <div class="project-body">
-              <span class="project-tag">Data Journalism</span>
-              <h3><a href="https://djnf-data-2025.github.io/levi-jiang/" target="_blank" rel="noopener">Who is Fueling the New Jersey Governor Race?</a></h3>
-              <p>A pitch of investigating campaign finance data of New Jersey Governor&rsquo;s candidates.</p>
-            </div>
-          </article>
+    <!-- ============ Graphics ============ -->
+    <section class="media-section">
+      <div class="container">
+        <h2 class="media-heading">Graphics</h2>
+        <p class="media-sub">Illustration, infographics, and typography.</p>
+        <!-- Replace each <div class="gfx-ph"></div> with your graphic:
+             <a href="LINK" target="_blank"><img src="assets/Pics/gfx-1.jpg" alt="caption"></a> -->
+        <div class="gfx-grid">
+          <div class="gfx-ph"></div>
+          <div class="gfx-ph"></div>
+          <div class="gfx-ph"></div>
+          <div class="gfx-ph"></div>
+        </div>
+      </div>
+    </section>
 
-          <article class="projects-item">
-            <a class="project-thumb" href="https://ease010.github.io/DMN-data-story-proposal/" target="_blank" rel="noopener">
-              <img src="assets/Pics/garden-dallas.png" alt="Dallas campaign finance data" />
-            </a>
-            <div class="project-body">
-              <span class="project-tag">Data Journalism</span>
-              <h3><a href="https://ease010.github.io/DMN-data-story-proposal/" target="_blank" rel="noopener">Dallas City Council Campaign Finance Analysis</a></h3>
-              <p>A pitch of investigating campaign finance data of Dallas City Council members.</p>
-            </div>
-          </article>
-
+    <!-- ============ Podcast ============ -->
+    <section class="media-section">
+      <div class="container">
+        <h2 class="media-heading">Podcast</h2>
+        <p class="media-sub">Audio storytelling and interviews.</p>
+        <!-- Paste your podcast embed here (Spotify / Apple Podcasts / YouTube).
+             e.g. <div class="podcast-embed"><iframe src="https://open.spotify.com/embed/show/..." height="352" allow="encrypted-media"></iframe></div> -->
+        <div class="podcast-placeholder">
+          <span>Podcast embed goes here — Spotify, Apple Podcasts, or YouTube.</span>
         </div>
       </div>
     </section>
@@ -85,6 +101,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=11"></script>
+  <script src="js/main.js?v=12"></script>
 </body>
 </html>
