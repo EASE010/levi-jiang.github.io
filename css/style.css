@@ -243,10 +243,9 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
 .media-sub { font-family: var(--sans); color: var(--muted-dark); font-size: 1rem; margin-bottom: 32px; margin-top: 20px; max-width: 90%; }
 
 /* Photography — masonry columns */
-.photo-grid { columns: 3 260px; column-gap: 16px; }
+.photo-grid { columns: 4 200px; column-gap: 14px; }
 .photo-grid > * { width: 100%; margin: 0 0 16px; border-radius: 3px; break-inside: avoid; display: block; overflow: hidden; }
-.photo-grid img { width: 100%; display: block; transition: transform .5s ease; }
-.photo-grid a:hover img { transform: scale(1.04); }
+.photo-grid img { width: 100%; display: block; }
 .ph-tile { background: linear-gradient(135deg, #e6e7e8, #d4d5d6); }
 .ph-tile.t1 { aspect-ratio: 3 / 4; }
 .ph-tile.t2 { aspect-ratio: 1 / 1; }
