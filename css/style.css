@@ -242,12 +242,12 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
 
 /* Photography — masonry columns */
 .photo-grid { columns: 4 200px; column-gap: 14px; }
-.photo-grid > * { width: 100%; margin: 0 0 16px; border-radius: 3px; break-inside: avoid; display: block; overflow: hidden; }
-.photo-grid img { width: 100%; display: block; }
+.photo-grid > * { width: 100%; margin: 0 0 16px; border-radius: 3px; break-inside: avoid; display: block; overflow: hidden; background: var(--bg-soft); }
+.photo-grid img { width: 100%; height: auto; display: block; }
 
 /* Graphics — masonry (charts/maps shown in full, never cropped) */
 .gfx-grid { columns: 4; column-gap: 14px; }
-.gfx-grid > * { display: block; break-inside: avoid; margin: 0 0 14px; overflow: hidden; border-radius: 3px; border: 1px solid var(--line); }
+.gfx-grid > * { display: block; break-inside: avoid; margin: 0 0 14px; overflow: hidden; border-radius: 3px; border: 1px solid var(--line); background: var(--bg-soft); }
 .gfx-grid img { width: 100%; height: auto; display: block; }
 @media (max-width: 1000px) { .gfx-grid { columns: 3; } }
 @media (max-width: 720px) { .gfx-grid { columns: 2; } }
