@@ -245,14 +245,22 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
 .photo-grid img { width: 100%; height: auto; display: block; }
 
 /* Graphics — masonry (charts/maps shown in full, never cropped) */
-.gfx-grid { columns: 3; column-gap: 14px; }
-.gfx-grid > * { display: block; break-inside: avoid; margin: 0 0 14px; overflow: hidden; border-radius: 0px; border: 0px solid var(--line); background: var(--bg-soft); }
-.gfx-grid img { width: 100%; height: auto; display: block; }
-@media (max-width: 1000px) { .gfx-grid { columns: 3; } }
-@media (max-width: 720px) { .gfx-grid { columns: 2; } }
+.gfx-grid { display: flex; gap: 14px; align-items: flex-start; }
+.gfx-col { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.gfx-col > a { display: block; overflow: hidden; background: var(--bg-soft); }
+.gfx-col img { width: 100%; height: auto; display: block; }
+@media (max-width: 640px) { .gfx-grid { flex-direction: column; } }
 
 /* Podcast episode list */
+.podcast-layout { display: flex; gap: 48px; align-items: center; }
+.podcast-layout .podcast-list { flex: 1 1 35%; }
+.podcast-figure { flex: 1 1 42%; margin: 0; }
+.podcast-figure img { width: 100%; height: auto; display: block; }
 .podcast-list { list-style: none; max-width: 820px; margin: 0; }
+@media (max-width: 768px) {
+  .podcast-layout { flex-direction: column; align-items: stretch; }
+  .podcast-figure { order: -1; }
+}
 .podcast-list li { border-top: 0px solid var(--line); }
 .podcast-list li:last-child { border-bottom: 0cm solid var(--line); }
 .podcast-list a {
@@ -265,7 +273,6 @@ h1, h2, h3 { font-weight: 400; line-height: 1.05; }
 
 @media (max-width: 640px) {
   .photo-grid { columns: 2 140px; }
-  .gfx-grid { columns: 2; }
 }
 
 /* ---------- Section shell ---------- */
